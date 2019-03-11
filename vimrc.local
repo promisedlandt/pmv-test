@@ -1,0 +1,7 @@
+set nocompatible
+source /tmp/pmv-test/bundle/vim-pathogen/autoload/pathogen.vim
+set runtimepath=/tmp/pmv-test/bundle/vim-pathogen,$VIMRUNTIME
+filetype off
+
+execute pathogen#infect('/tmp/pmv-test/bundle/{}')
+filetype plugin indent on
